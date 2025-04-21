@@ -3,7 +3,7 @@ ori = ["abc", "bcd", "cde", "def", "efg", "fgh", "ghi"] # 7
 string = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 
 def Myappend(value):
-    data.append(value)
+  data.append(value)
 
 def Mypop():
   if(len(data) == 0):
@@ -77,28 +77,27 @@ def Mylen():
   return len(string)
 
 def test():
-    Myappend("last")
-    ori.append("last")
-    print(f"Append, {ori == data} | ori: {ori}, data: {data}")
+  Myappend("last")
+  ori.append("last")
+  print(f"Append, {ori == data} | ori: {ori}, data: {data}")
     
-    Mypop()
-    ori.pop()
-    print(f"Pop, {ori == data} | ori: {ori}, data: {data}")
-    
-    Myinsert(-1, "test")
-    ori.insert(-1, "test")
-    print(f"Insert, {ori == data} | ori: {ori}, data: {data}")
-    
-    Myremove("test")
-    ori.remove("test")
-    print(f"Remove, {ori == data} | ori: {ori}, data: {data}")
-    
-    print(f"index, {ori.index('abc') == Myindex('abc')} | ori: {ori.index('abc')}, data: {Myindex('abc')}")
-    
-    Myreverse()
-    ori.reverse()
-    print(f"Reverse, {ori == data} | ori: {ori}, data: {data}")
-
-    print(f"Count, {string.count('e') ==Mycount('e')} | ori: {string.count('e')}, data: {Mycount('e')}")
+  Mypop()
+  ori.pop()
+  print(f"Pop, {ori == data} | ori: {ori}, data: {data}")
+  
+  Myinsert(-1, "test")
+  ori.insert(-1, "test")
+  print(f"Insert, {ori == data} | ori: {ori}, data: {data}")
+  
+  Myremove("test")
+  ori.remove("test")
+  print(f"Remove, {ori == data} | ori: {ori}, data: {data}")
+  
+  print(f"index, {ori.index('abc') == Myindex('abc')} | ori: {ori.index('abc')}, data: {Myindex('abc')}")
+  
+  Myreverse()
+  ori.reverse()
+  print(f"Reverse, {ori == data} | ori: {ori}, data: {data}")
+  print(f"Count, {string.count('e') ==Mycount('e')} | ori: {string.count('e')}, data: {Mycount('e')}")
 
 test()
